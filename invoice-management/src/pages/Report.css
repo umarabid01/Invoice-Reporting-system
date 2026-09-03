@@ -1,0 +1,144 @@
+ .App {
+  /* text-align: center; */
+  margin-left:30px;
+  
+  
+}
+body{
+background-color: rgb(236, 233, 229);
+}
+#customer-label {
+  display: flex;
+  align-items: center;
+  margin-right:5px;
+}
+#customer-select {
+  width: 400px;
+ 
+}
+#item-label {
+  display: flex;
+  align-items: center;
+  margin-right:5px;
+}
+#item-select {
+  width: 400px;
+}
+
+.showcustomer{
+  display: flex;
+}
+
+
+
+
+table,td,th{
+  border:2px solid black;
+  text-align: center;
+  padding:10px;
+  margin-bottom: 30px;
+
+}
+td{
+  padding:5px;
+}
+thead{
+  background-color: #2a9d8f;
+  color:white;
+}
+table{
+  border-collapse: collapse;
+  width:95%;
+}
+#toggle-btn{
+    display: flex;
+    margin-left:1350px;
+    margin-bottom: 10px;
+}
+#find-btn{
+background-color:#f3af02;
+color:white;
+border-radius: 10px;
+padding:8px;
+margin-left: 700px;
+width:80px
+}
+#print-btn{
+background-color:#e76f51;
+color:white;
+border-radius: 10px;
+padding:8px;
+margin-left: 10px;
+}
+#rows-select{
+  /* margin: 100px; */
+  width: 85px;
+  height: 35px;
+  padding: 1px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+#isvisible-btn{
+background-color:#d60101;
+color:white;
+border-radius: 10px;
+padding:8px;
+margin-left: 1300px;
+margin-bottom: 10px;
+}
+#export-btn{
+background-color:#e76f51;
+color:white;
+border-radius: 10px;
+padding:8px;
+margin-left: 10px;
+}
+label{
+  margin-left: 10px;  
+}
+input[type="date"]{
+  border-radius: 5px;
+  padding: 5px;
+  width: 375px;
+  height: 30px;
+}
+
+/* select{
+  border-radius: 15px;
+  padding: 5px;
+   width: 200px;
+   height:70px;
+} */
+
+h2{
+  background-color: #264653;
+  color:white;
+  margin:0px;
+  padding:10px;
+  margin-bottom: 20px;
+  border-radius: 0px 0px 15px 15px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+input[type='radio']{
+  margin-left: 25px;
+}
+
+.radiolabel{
+  margin-left: 2px;
+}
+
+#back-btn{
+  margin-right: 5px;
+  border-radius: 5px;
+  height: 30px;
+  width: 50px;
+}
+#forward-btn{
+  margin-left: 5px;
+  border-radius: 5px;
+  
+  height: 30px;
+  width: 50px;
+}

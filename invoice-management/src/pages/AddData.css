@@ -1,0 +1,135 @@
+/* =========================
+   PAGE BACKGROUND
+========================= */
+
+body {
+  background-color: rgb(236, 233, 229);
+}
+
+.page-container {
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-bottom: 40px;
+}
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #264653;
+  border-radius: 0px 0px 15px 15px;
+  padding: 15px 30px;
+  margin: 0px;
+  margin-right: 20px;
+  color: white;
+}
+
+.page-header h1 {
+  font-style: italic;
+  margin: 0;
+}
+
+
+/* =========================
+   NAVIGATION BUTTONS
+========================= */
+
+.navigation-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.navigation-buttons button {
+  background-color: #e76f51;
+  color: white;
+  font-size: medium;
+  border-radius: 10px;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.navigation-buttons button:hover {
+  opacity: 0.9;
+}
+
+.navigation-buttons #geninv {
+  background-color: #2a9d8f;
+}
+
+
+/* =========================
+   DATA GRID (Customer / Item / Tax)
+========================= */
+
+.data-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+/* =========================
+   DATA CARD (outer teal panel)
+========================= */
+
+.data-card {
+  text-align: center;
+  background-color: #2a9d8f;
+  border-radius: 15px;
+  padding: 15px;
+  color: white;
+  flex: 1 1 280px;
+  max-width: 320px;
+}
+
+.data-card h2 {
+  text-align: center;
+  background-color: #264653;
+  border-radius: 15px;
+  max-width: 220px;
+  margin: 0 auto 15px auto;
+  padding: 10px;
+  color: white;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.data-card input {
+  display: block;
+  width: 85%;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 7px;
+  border: 1px solid #777;
+}
+
+
+/* =========================
+   ADD BUTTONS
+========================= */
+
+.data-card button {
+  background-color: #264653;
+  color: white;
+  font-size: medium;
+  border-radius: 10px;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.data-card button:hover {
+  background-color: #e76f51;
+}

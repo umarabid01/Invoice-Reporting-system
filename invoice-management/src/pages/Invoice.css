@@ -1,0 +1,213 @@
+.App {
+  margin-left: 30px;
+}
+
+/* =========================
+   PAGE BACKGROUND
+========================= */
+
+body {
+  background-color: rgb(236, 233, 229);
+}
+
+
+/* =========================
+   MAIN INVOICE HEADING
+========================= */
+
+#generateinvoice {
+  text-align: center;
+  color: white;
+  background-color: #264653;
+  margin: 0px;
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 0px 0px 15px 15px;
+  font-style: italic;
+}
+
+
+/* =========================
+   CUSTOMER SECTION
+========================= */
+
+.customerdiv {
+  text-align: center;
+  background-color: #2a9d8f;
+  border-radius: 15px;
+  max-width: 1000px;
+  margin-left: 180px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  color: white;
+}
+
+
+/* =========================
+   ITEM SECTION
+========================= */
+
+.itemdiv {
+  text-align: center;
+  background-color: #2a9d8f;
+  border-radius: 15px;
+  max-width: 1000px;
+  margin-left: 180px;
+  padding: 15px;
+  color: white;
+}
+
+
+/* =========================
+   SUB CUSTOMER SECTION
+========================= */
+
+.subcustomerdiv {
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 10px;
+  border: 2px solid #264653;
+}
+
+
+/* =========================
+   SUB ITEM SECTION
+========================= */
+
+.subitemdiv {
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 10px;
+  border: 2px solid #264653;
+}
+
+
+/* =========================
+   LABELS
+========================= */
+
+label {
+  margin-left: 30px;
+  color:black;
+}
+
+
+/* =========================
+   INPUTS & SELECT
+========================= */
+
+input,
+select {
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid #777;
+}
+
+
+/* =========================
+   ADD BUTTON
+========================= */
+
+#btn-add {
+  background-color: #2a9d8f;
+  color: white;
+  font-size: medium;
+  border-radius: 10px;
+  margin-left: 5px;
+  padding: 7px 12px;
+  border: none;
+}
+
+
+/* =========================
+   MORE BUTTON
+========================= */
+
+#btn-more {
+  background-color: #2a9d8f;
+  color: white;
+  border-radius: 10px;
+  padding: 7px 12px;
+  border: none;
+}
+
+
+/* =========================
+   DELETE BUTTON
+========================= */
+
+#btn-del {
+  background-color: #d60101;
+  color: white;
+  border-radius: 10px;
+  margin-left: 5px;
+  padding: 7px 12px;
+  border: none;
+}
+
+
+/* =========================
+   PRINT BUTTON
+========================= */
+
+#btn-print {
+  background-color: #e76f51;
+  color: white;
+  font-size: large;
+  border-radius: 10px;
+  margin-left: 1040px;
+  margin-bottom: 40px;
+  padding: 8px 15px;
+  border: none;
+}
+
+
+/* =========================
+   LAST BUTTON
+========================= */
+
+.lastbtn {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #264653;
+  border-radius: 15px;
+  max-width: 200px;
+  margin-left: 580px;
+  padding: 10px;
+  color: white;
+}
+
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+h3 {
+  text-align: center;
+  background-color: #264653;
+  border-radius: 15px;
+  max-width: 400px;
+  margin-left: 770px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: white;
+}
+
+
+/* =========================
+   PRINT-ONLY ELEMENTS
+========================= */
+
+#printinvoice {
+  display: none;
+}
+
+.printing {
+  display: none;
+}
