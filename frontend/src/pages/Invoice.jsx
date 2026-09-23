@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import api from "../api";
 import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
 import "./Invoice.css";
@@ -33,8 +33,8 @@ const getItem = async () => {
 try {
 
 
-  const result = await axios.get(
-    "http://localhost:5000/item"
+  const result = await api.get(
+    "/item"
   );
 
   setItem(result.data);
@@ -52,8 +52,8 @@ const getTax = async () => {
 try {
 
 
-  const result = await axios.get(
-    "http://localhost:5000/tax"
+  const result = await api.get(
+    "/tax"
   );
 
   setTax(result.data);
@@ -71,8 +71,8 @@ const getCustomer = async () => {
 try {
 
 
-  const result = await axios.get(
-    "http://localhost:5000/customer"
+  const result = await api.get(
+    "/customer"
   );
 
   setCustomer(result.data);
@@ -122,8 +122,8 @@ if (
 
       setSubmit(true);
 
-      const invoice_res = await axios.post(
-        "http://localhost:5000/invoice",
+      const invoice_res = await api.post(
+        "/invoice",
         {
           customer_id,
           date
@@ -140,8 +140,8 @@ if (
       }));
 
 
-      await axios.post(
-        "http://localhost:5000/invoicedetail",
+      await api.post(
+        "/invoicedetail",
         invoicedata
       );
 

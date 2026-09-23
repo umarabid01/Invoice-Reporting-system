@@ -51,6 +51,7 @@ table{
   width:95%;
 }
 #toggle-btn{
+  margin-top: 10px;
     display: flex;
     margin-left:1350px;
     margin-bottom: 10px;

@@ -1,5 +1,5 @@
 import React, {useEffect, useState } from 'react'
-import axios from 'axios'
+import api from '../api'
 import jsPDF from 'jspdf'
 import autoTable from 'jspdf-autotable'
 import * as XLSX from 'xlsx'
@@ -36,7 +36,7 @@ const[radiovalue,setRadioValue]=useState('all')
 
     const getItem=async()=>{
         try{
-            const result =await axios.get('http://localhost:5000/item')
+            const result =await api.get('/item')
             // const result =await axios.get('https://report-app-one-khaki.vercel.app/item')
             setItem(result.data)
             console.log("done fetch item")
@@ -49,7 +49,7 @@ console.log("error fetch the items")
     const getCustomer=async()=>{
         try{
             console.log("trying to fetch customer")
-            const result=await axios.get('http://localhost:5000/customer')
+            const result=await api.get('/customer')
             // const result=await axios.get('https://report-app-one-khaki.vercel.app/customer')
             setCustomer(result.data)
 console.log("success fetch customer")
@@ -144,9 +144,8 @@ if(itemid.length===0){
     }
 try{
 
-const result = await axios.post(
-    // 'https://report-app-one-khaki.vercel.app/alldetails'
-    'http://localhost:5000/alldetails',
+const result = await api.post(
+  '/alldetails',
     { customerid, itemid, date1, date2, radiovalue }
 );
         setAllDetails(result.data);

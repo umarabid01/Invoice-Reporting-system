@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import api from "../api";
 import "./AddData.css"
 
 function AddData() {
@@ -41,8 +41,8 @@ function AddData() {
 
         try {
 
-            await axios.post(
-                "http://localhost:5000/customer",
+            await api.post(
+                "/customer",
                 {
                     customer_name: customerName,
                     customer_address: customerAddress
@@ -76,8 +76,8 @@ function AddData() {
 
         try {
 
-            await axios.post(
-                "http://localhost:5000/item",
+            await api.post(
+                "/item",
                 {
                     item_name: itemName,
                     item_price: Number(itemPrice),
@@ -115,8 +115,8 @@ function AddData() {
 
         try {
 
-            await axios.post(
-                "http://localhost:5000/tax",
+            await api.post(
+                "/tax",
                 {
                     s_tax_percentage: Number(taxPercentage)
                 }
